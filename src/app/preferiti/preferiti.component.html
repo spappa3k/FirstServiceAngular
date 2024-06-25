@@ -1,0 +1,6 @@
+<h3>Preferiti:</h3>
+<div class="card-body" *ngFor="let p of ps.PostsPreferiti">
+    <div class="card" style="display: flex; flex-direction: row;">{{p.title}}
+    <button type="button" class="btn btn-dark" (click)="ps.removeFromPreferiti(p)">x</button> 
+   </div>
+</div>
